@@ -15,10 +15,17 @@ roadkill <-  read_csv(tempf) |>
 
 count(roadkill, species) |> arrange(desc(n))
 
+top5 <- c("Mule Deer (Odocoileus hemionus)", "White-tailed Deer (Odocoileus virginianus)", "Elk (Cervus canadensis)",
+"Moose (Alces americanus)", "Deer (Odocoileus)", "Domestic Cat (Felis catus)")
+
 roadkill |>
   mutate(
     observed_month = month(observed),
     observed_year = year(observed)) |>
-  count(species, county, region, highway, observed_year, observed_month, name = "kills") |>
-  ggplot(aes(x = observed_month, y = kills, color = observed_year)) +
-  geom_point()
+  filter(observed_year %in% 2015:2024) |>
+  filter(species %in% top5) |>
+  count(species, observed_year, observed_month, name = "kills") |>
+  ggplot(aes(x = observed_month, y = kills,
+    color = factor(observed_year), shape = species)) +
+  geom_point() +
+  geom_line()
