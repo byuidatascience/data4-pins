@@ -10,7 +10,1241 @@
 <atom:link href="https://byuidatascience.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>Documentation on the avaialable data that we use in our courses.</description>
 <generator>quarto-1.5.56</generator>
-<lastBuildDate>Wed, 08 May 2024 06:00:00 GMT</lastBuildDate>
+<lastBuildDate>Wed, 15 Oct 2025 06:00:00 GMT</lastBuildDate>
+<item>
+  <title>US Census Record Names</title>
+  <dc:creator>DS 250</dc:creator>
+  <link>https://byuidatascience.github.io/posts/intro_ds/census_names.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="section" class="level1">
+<h1></h1>
+<section id="data-details" class="level2">
+<h2 class="anchored" data-anchor-id="data-details">Data details</h2>
+<p>There are <strong>640,295 rows</strong> and <strong>54 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/0d43d66f-d3b7-4c43-8c36-52e3ed69e7f1/_rev1317/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/names_year_csv</code>.</p>
+<p>This data is available to <strong>all</strong>.</p>
+<section id="variable-description" class="level3">
+<h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
+<ul>
+<li><strong>name:</strong> The birth name</li>
+<li><strong>year:</strong> The year of their social security number creation.</li>
+<li><strong>State Name Columns:</strong> Each column for the 50 states and DC.</li>
+<li><strong>Total:</strong> The total over all the states.</li>
+</ul>
+</section>
+<section id="variable-summary" class="level3">
+<h3 class="anchored" data-anchor-id="variable-summary">Variable summary</h3>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: numeric</strong></p>
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 11%">
+<col style="width: 16%">
+<col style="width: 9%">
+<col style="width: 9%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 6%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: right;">p0</th>
+<th style="text-align: right;">p25</th>
+<th style="text-align: right;">p50</th>
+<th style="text-align: right;">p75</th>
+<th style="text-align: right;">p100</th>
+<th style="text-align: left;">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">year</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1980.63</td>
+<td style="text-align: right;">32.00</td>
+<td style="text-align: right;">1910</td>
+<td style="text-align: right;">1957</td>
+<td style="text-align: right;">1989</td>
+<td style="text-align: right;">2007</td>
+<td style="text-align: right;">2024</td>
+<td style="text-align: left;">▃▃▃▆▇</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AK</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.72</td>
+<td style="text-align: right;">4.95</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">206</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">AL</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9.53</td>
+<td style="text-align: right;">56.31</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3050</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">AR</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5.62</td>
+<td style="text-align: right;">32.33</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1627</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">AZ</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6.30</td>
+<td style="text-align: right;">29.80</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1047</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CA</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">51.70</td>
+<td style="text-align: right;">240.24</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">8315</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CO</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6.19</td>
+<td style="text-align: right;">30.98</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1037</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">CT</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5.69</td>
+<td style="text-align: right;">37.79</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1624</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">DC</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2.33</td>
+<td style="text-align: right;">17.21</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">883</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">DE</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.06</td>
+<td style="text-align: right;">7.60</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">312</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">FL</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">17.59</td>
+<td style="text-align: right;">85.48</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3506</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">GA</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">14.48</td>
+<td style="text-align: right;">72.85</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3080</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">HI</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.60</td>
+<td style="text-align: right;">8.63</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">326</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">IA</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6.88</td>
+<td style="text-align: right;">43.21</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2370</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ID</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2.04</td>
+<td style="text-align: right;">10.92</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">530</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">IL</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">25.60</td>
+<td style="text-align: right;">145.72</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6248</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">IN</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">12.29</td>
+<td style="text-align: right;">72.68</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3014</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">KS</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5.47</td>
+<td style="text-align: right;">30.94</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1387</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">KY</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9.02</td>
+<td style="text-align: right;">55.19</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2561</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LA</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9.39</td>
+<td style="text-align: right;">46.69</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1681</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MA</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">12.75</td>
+<td style="text-align: right;">88.15</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3910</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MD</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7.81</td>
+<td style="text-align: right;">45.69</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1793</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ME</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2.29</td>
+<td style="text-align: right;">14.97</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">778</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MI</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">19.63</td>
+<td style="text-align: right;">118.25</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4941</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MN</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">9.55</td>
+<td style="text-align: right;">56.53</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2144</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MO</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">11.56</td>
+<td style="text-align: right;">66.68</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2803</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MS</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6.60</td>
+<td style="text-align: right;">40.02</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2294</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MT</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.58</td>
+<td style="text-align: right;">10.11</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">473</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NC</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">14.84</td>
+<td style="text-align: right;">79.31</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3900</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ND</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.77</td>
+<td style="text-align: right;">10.99</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">497</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NE</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3.81</td>
+<td style="text-align: right;">23.05</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1060</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NH</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.63</td>
+<td style="text-align: right;">10.96</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">447</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NJ</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">14.32</td>
+<td style="text-align: right;">87.42</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3713</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NM</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2.79</td>
+<td style="text-align: right;">14.35</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">589</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NV</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.71</td>
+<td style="text-align: right;">9.82</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">340</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NY</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">40.09</td>
+<td style="text-align: right;">229.81</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">10051</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">OH</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">24.02</td>
+<td style="text-align: right;">146.96</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">5899</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">OK</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7.06</td>
+<td style="text-align: right;">37.79</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2072</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">OR</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4.70</td>
+<td style="text-align: right;">25.58</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1121</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">PA</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">27.86</td>
+<td style="text-align: right;">184.81</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8197</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">RI</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.90</td>
+<td style="text-align: right;">14.53</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">682</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SC</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">7.53</td>
+<td style="text-align: right;">43.33</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2326</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">SD</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1.76</td>
+<td style="text-align: right;">11.07</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">507</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">TN</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">11.02</td>
+<td style="text-align: right;">62.75</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3296</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">TX</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">39.38</td>
+<td style="text-align: right;">162.64</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">5064</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">UT</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4.24</td>
+<td style="text-align: right;">20.74</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">707</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">VA</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">11.75</td>
+<td style="text-align: right;">63.90</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2688</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">VT</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.90</td>
+<td style="text-align: right;">6.53</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">325</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">WA</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">8.35</td>
+<td style="text-align: right;">42.95</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1750</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WI</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">10.33</td>
+<td style="text-align: right;">64.66</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2403</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">WV</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4.85</td>
+<td style="text-align: right;">34.06</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1796</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WY</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.70</td>
+<td style="text-align: right;">5.06</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">229</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Total</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">512.54</td>
+<td style="text-align: right;">2657.86</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">139</td>
+<td style="text-align: right;">99849</td>
+<td style="text-align: left;">▇▁▁▁▁</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<p><strong>Variable type: character</strong></p>
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 19%">
+<col style="width: 13%">
+<col style="width: 19%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 15%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">skim_variable</th>
+<th style="text-align: right;">n_missing</th>
+<th style="text-align: right;">complete_rate</th>
+<th style="text-align: right;">min</th>
+<th style="text-align: right;">max</th>
+<th style="text-align: right;">empty</th>
+<th style="text-align: right;">n_unique</th>
+<th style="text-align: right;">whitespace</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">name</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">33400</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- ```{r}
+#| echo: true
+#| eval: false
+#| code-fold: true
+#| code-summary: Explore generating code using R
+#| code-line-numbers: true
+#| file: ../../../data_scripts/missing/flights_missing_json.R
+``` -->
+<div class="cell">
+<details class="code-fold">
+<summary>Explore generating code using Python</summary>
+<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># https://www.ssa.gov/oact/babynames/limits.html</span></span>
+<span id="cb1-2"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Download and unzip to same folder as this script</span></span>
+<span id="cb1-3"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># AK,F,1911,Ruth,7</span></span>
+<span id="cb1-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># %%</span></span>
+<span id="cb1-5"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> polars <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pl</span>
+<span id="cb1-6"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> pins <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> board_connect</span>
+<span id="cb1-7"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> dotenv <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> load_dotenv, find_dotenv</span>
+<span id="cb1-8"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># from posit import connect</span></span>
+<span id="cb1-9"></span>
+<span id="cb1-10">load_dotenv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"../../../.env"</span>)</span>
+<span id="cb1-11">API_KEY <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> os.getenv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'CONNECT_API_KEY'</span>)</span>
+<span id="cb1-12">SERVER <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> os.getenv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'CONNECT_SERVER'</span>)</span>
+<span id="cb1-13"></span>
+<span id="cb1-14"></span>
+<span id="cb1-15"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># %%</span></span>
+<span id="cb1-16">dat <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> pl.read_csv(</span>
+<span id="cb1-17">  <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'namesbystate/*.TXT'</span>,</span>
+<span id="cb1-18">  has_header<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">False</span>,</span>
+<span id="cb1-19">  new_columns <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> [<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'state'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'gender'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'year'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'name'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'count'</span>])<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-20">  .group_by(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'state'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'name'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'year'</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-21">  .agg(pl.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">sum</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'count'</span>).alias(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'count'</span>))<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-22">  .sort(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'state'</span>)</span>
+<span id="cb1-23"></span>
+<span id="cb1-24">dat_total <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> dat.group_by(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'name'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'year'</span>).agg(pl.<span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">sum</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'count'</span>).alias(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'Total'</span>))</span>
+<span id="cb1-25"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># %%</span></span>
+<span id="cb1-26"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Now pivot</span></span>
+<span id="cb1-27">out_dat <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> dat.pivot(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'state'</span>, index<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'name'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'year'</span>], values<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'count'</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-28">  .fill_null(<span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0</span>)<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-29">  .join(dat_total, on<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>[<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'name'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'year'</span>])<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">\</span></span>
+<span id="cb1-30">  .sort(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'name'</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'year'</span>)</span>
+<span id="cb1-31"></span>
+<span id="cb1-32"></span>
+<span id="cb1-33"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># %%</span></span>
+<span id="cb1-34"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Publish the data to the server with Bro. Hathaway as the owner.</span></span>
+<span id="cb1-35">pin_name <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"names_year"</span></span>
+<span id="cb1-36">board <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> board_connect(server_url<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>SERVER, api_key<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>API_KEY)</span>
+<span id="cb1-37">board.pin_write(out_dat.to_pandas(), <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/"</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> pin_name, <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">type</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"parquet"</span>)</span>
+<span id="cb1-38"></span>
+<span id="cb1-39"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># %%</span></span>
+<span id="cb1-40">meta <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> board.pin_meta(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/"</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> pin_name)</span>
+<span id="cb1-41"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># https://docs.posit.co/connect/user/python-pins/</span></span>
+<span id="cb1-42"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># https://rstudio.github.io/pins-python/</span></span>
+<span id="cb1-43">meta.local.get(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"content_id"</span>)</span>
+<span id="cb1-44"></span>
+<span id="cb1-45"></span>
+<span id="cb1-46"></span>
+<span id="cb1-47"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#%% Need to set the vanity url</span></span>
+<span id="cb1-48"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Do by hand https://posit.byui.edu/connect/#/apps/c0c197d3-f6bc-4129-9df4-4683c1f25e61/access</span></span>
+<span id="cb1-49"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Soon there will be code.</span></span>
+<span id="cb1-50"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># https://github.com/posit-dev/posit-sdk-py/issues/175</span></span>
+<span id="cb1-51"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># https://posit-dev.github.io/posit-sdk-py/quickstart.html</span></span></code></pre></div>
+</details>
+</div>
+</section>
+</section>
+<section id="access-data" class="level2">
+<h2 class="anchored" data-anchor-id="access-data">Access data</h2>
+<p>This data is available to <strong>all</strong>.</p>
+<p><strong>Direct Download:</strong> <a href="https://posit.byui.edu/content/0d43d66f-d3b7-4c43-8c36-52e3ed69e7f1/names_year_csv.csv">names_year_csv.csv</a></p>
+<section id="r-and-python-download" class="level4">
+<h4 class="anchored" data-anchor-id="r-and-python-download"><strong>R and Python Download:</strong></h4>
+<section id="url-connections" class="level5">
+<h5 class="anchored" data-anchor-id="url-connections"><strong>URL Connections:</strong></h5>
+<p>For public data, any user can connect and read the data using <code>pins::board_connect_url()</code> in R.</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(pins)</span>
+<span id="cb2-2">url_data <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://posit.byui.edu/data/names_year_csv/"</span></span>
+<span id="cb2-3">board_url <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect_url</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dat"</span> <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">=</span> url_data))</span>
+<span id="cb2-4">dat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_read</span>(board_url, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dat"</span>)</span></code></pre></div>
+<p>Use this custom function in Python to have the data in a Pandas DataFrame.</p>
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">as</span> pd</span>
+<span id="cb3-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> requests</span>
+<span id="cb3-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> io <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> BytesIO</span>
+<span id="cb3-4"></span>
+<span id="cb3-5"><span class="kw" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">def</span> read_url_pin(name):</span>
+<span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"https://posit.byui.edu/data/"</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> name <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"/"</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> name <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">".parquet"</span></span>
+<span id="cb3-7">  response <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> requests.get(url)</span>
+<span id="cb3-8">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">200</span>:</span>
+<span id="cb3-9">    parquet_content <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> BytesIO(response.content)</span>
+<span id="cb3-10">    pandas_dataframe <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
+<span id="cb3-11">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> pandas_dataframe</span>
+<span id="cb3-12">  <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">else</span>:</span>
+<span id="cb3-13">    <span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">f"Failed to retrieve data. Status code: </span><span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">{</span>response<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">.</span>status_code<span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">}</span><span class="ss" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"</span>)</span>
+<span id="cb3-14">    <span class="cf" style="color: #003B4F;
+background-color: null;
+font-weight: bold;
+font-style: inherit;">return</span> <span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">None</span></span>
+<span id="cb3-15"></span>
+<span id="cb3-16"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Example usage:</span></span>
+<span id="cb3-17">pandas_df <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> read_url_pin(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"names_year_csv"</span>)</span></code></pre></div>
+</section>
+</section>
+<section id="authenticated-connection" class="level4">
+<h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
+<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create an API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
+<p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(pins)</span>
+<span id="cb4-2">board <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">board_connect</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">auth =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"auto"</span>)</span>
+<span id="cb4-3">dat <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">pin_read</span>(board, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/names_year_csv"</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> os</span>
+<span id="cb5-2"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> pins <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> board_rsconnect</span>
+<span id="cb5-3"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">from</span> dotenv <span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> load_dotenv</span>
+<span id="cb5-4">load_dotenv()</span>
+<span id="cb5-5">API_KEY <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> os.getenv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'CONNECT_API_KEY'</span>)</span>
+<span id="cb5-6">SERVER <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> os.getenv(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">'CONNECT_SERVER'</span>)</span>
+<span id="cb5-7"></span>
+<span id="cb5-8">board <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> board_rsconnect(server_url<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>SERVER, api_key<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span>API_KEY)</span>
+<span id="cb5-9">dat <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> board.pin_read(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"hathawayj/names_year_csv"</span>)</span></code></pre></div>
+
+
+</section>
+</section>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://www.ssa.gov/oact/babynames/limits.html">https://www.ssa.gov/oact/babynames/limits.html</a>↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <category>DS250</category>
+  <category>names</category>
+  <guid>https://byuidatascience.github.io/posts/intro_ds/census_names.html</guid>
+  <pubDate>Wed, 15 Oct 2025 06:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Access to Drinking Water</title>
   <dc:creator>DS 350</dc:creator>
@@ -9001,439 +10235,6 @@ font-style: inherit;">"hathawayj/zinc_for_colds"</span>)</span></code></pre></di
   <category>health</category>
   <guid>https://byuidatascience.github.io/posts/intro_stats/zinc_for_colds.html</guid>
   <pubDate>Thu, 02 May 2024 06:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>NASDAQ Price and Volume</title>
-  <dc:creator>MATH 221</dc:creator>
-  <link>https://byuidatascience.github.io/posts/intro_stats/nasdaq_price_and_volume.html</link>
-  <description><![CDATA[ 
-
-
-
-
-
-<section id="section" class="level1">
-<h1></h1>
-<section id="data-details" class="level2">
-<h2 class="anchored" data-anchor-id="data-details">Data details</h2>
-<p>There are <strong>20 rows</strong> and <strong>4 columns</strong>. The data source<sup>1</sup> is used to create our data that is stored in our <a href="https://posit.byui.edu/content/8a8a627a-7186-4abc-b9eb-8d4466ecd28f/_rev482/">pins table</a>. You can access this pin from a connection to <a href="https://posit.byui.edu">posit.byui.edu</a> using <code>hathawayj/nasdaq_price_and_volume</code>.</p>
-<p>This data is available to <strong>all</strong>.</p>
-<section id="variable-description" class="level3">
-<h3 class="anchored" data-anchor-id="variable-description">Variable description</h3>
-<ul>
-<li><strong>Symbol</strong> Unique code for each company</li>
-<li><strong>Company</strong> Company name</li>
-<li><strong>Price..US..</strong> U.S. Price</li>
-<li><strong>Share.Volume</strong> Share volume (total number of shares bought or sold)</li>
-</ul>
-</section>
-<section id="variable-summary" class="level3">
-<h3 class="anchored" data-anchor-id="variable-summary">Variable summary</h3>
-<div class="cell">
-<div class="cell-output-display">
-<p><strong>Variable type: numeric</strong></p>
-<table class="caption-top table table-sm table-striped small">
-<colgroup>
-<col style="width: 11%">
-<col style="width: 8%">
-<col style="width: 11%">
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 9%">
-<col style="width: 9%">
-<col style="width: 10%">
-<col style="width: 5%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">skim_variable</th>
-<th style="text-align: right;">n_missing</th>
-<th style="text-align: right;">complete_rate</th>
-<th style="text-align: right;">mean</th>
-<th style="text-align: right;">sd</th>
-<th style="text-align: right;">p0</th>
-<th style="text-align: right;">p25</th>
-<th style="text-align: right;">p50</th>
-<th style="text-align: right;">p75</th>
-<th style="text-align: right;">p100</th>
-<th style="text-align: left;">hist</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Price..US..</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">26.63</td>
-<td style="text-align: right;">11.43</td>
-<td style="text-align: right;">10.84</td>
-<td style="text-align: right;">18.21</td>
-<td style="text-align: right;">27.55</td>
-<td style="text-align: right;">33.48</td>
-<td style="text-align: right;">55.73</td>
-<td style="text-align: left;">▇▇▅▂▁</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Share.Volume</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">3420670.35</td>
-<td style="text-align: right;">4036114.99</td>
-<td style="text-align: right;">167118.00</td>
-<td style="text-align: right;">682340.25</td>
-<td style="text-align: right;">1265881.00</td>
-<td style="text-align: right;">4199135.00</td>
-<td style="text-align: right;">11499567.00</td>
-<td style="text-align: left;">▇▂▁▁▂</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<p><strong>Variable type: character</strong></p>
-<table class="caption-top table table-sm table-striped small">
-<colgroup>
-<col style="width: 19%">
-<col style="width: 13%">
-<col style="width: 19%">
-<col style="width: 5%">
-<col style="width: 5%">
-<col style="width: 8%">
-<col style="width: 12%">
-<col style="width: 15%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">skim_variable</th>
-<th style="text-align: right;">n_missing</th>
-<th style="text-align: right;">complete_rate</th>
-<th style="text-align: right;">min</th>
-<th style="text-align: right;">max</th>
-<th style="text-align: right;">empty</th>
-<th style="text-align: right;">n_unique</th>
-<th style="text-align: right;">whitespace</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Symbol</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: right;">0</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Company</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">10</td>
-<td style="text-align: right;">39</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: right;">0</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="cell">
-<details class="code-fold">
-<summary>Explore generating code using R</summary>
-<div class="sourceCode cell-code" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(tidyverse)</span>
-<span id="cb1-2"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(pins)</span>
-<span id="cb1-3"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(connectapi)</span>
-<span id="cb1-4"></span>
-<span id="cb1-5">nasdaq_price_and_volume <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">read_csv</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'https://github.com/byuistats/data/raw/master/NASDAQ-PriceAndVolume/NASDAQ-PriceAndVolume.csv'</span>)</span>
-<span id="cb1-6"></span>
-<span id="cb1-7"></span>
-<span id="cb1-8"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Publish the data to the server with Bro. Hathaway as the owner.</span></span>
-<span id="cb1-9">board <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">board_connect</span>()</span>
-<span id="cb1-10"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">pin_write</span>(board, nasdaq_price_and_volume, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">type =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"parquet"</span>, <span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">access_type =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"all"</span>)</span>
-<span id="cb1-11"></span>
-<span id="cb1-12">pin_name <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"nasdaq_price_and_volume"</span></span>
-<span id="cb1-13">meta <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">pin_meta</span>(board, <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">paste0</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"hathawayj/"</span>, pin_name))</span>
-<span id="cb1-14">client <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">connect</span>()</span>
-<span id="cb1-15">my_app <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">content_item</span>(client, meta<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>local<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">$</span>content_id)</span>
-<span id="cb1-16"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">set_vanity_url</span>(my_app, <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">paste0</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"data/"</span>, pin_name))</span></code></pre></div>
-</details>
-</div>
-<!-- ```{python}
-#| echo: true
-#| eval: false
-#| code-fold: true
-#| code-summary: Explore generating code using Python
-#| code-line-numbers: true
-#| file: ../../../data_scripts/YOURFILEPATH
-``` -->
-</section>
-</section>
-<section id="access-data" class="level2">
-<h2 class="anchored" data-anchor-id="access-data">Access data</h2>
-<p>This data is available to <strong>all</strong>.</p>
-<p><strong>Direct Download:</strong> <a href="https://posit.byui.edu/content/8a8a627a-7186-4abc-b9eb-8d4466ecd28f/nasdaq_price_and_volume.parquet">nasdaq_price_and_volume.parquet</a></p>
-<section id="r-and-python-download" class="level4">
-<h4 class="anchored" data-anchor-id="r-and-python-download"><strong>R and Python Download:</strong></h4>
-<section id="url-connections" class="level5">
-<h5 class="anchored" data-anchor-id="url-connections"><strong>URL Connections:</strong></h5>
-<p>For public data, any user can connect and read the data using <code>pins::board_connect_url()</code> in R.</p>
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(pins)</span>
-<span id="cb2-2">url_data <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"https://posit.byui.edu/data/nasdaq_price_and_volume/"</span></span>
-<span id="cb2-3">board_url <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">board_connect_url</span>(<span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">c</span>(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"dat"</span> <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">=</span> url_data))</span>
-<span id="cb2-4">dat <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">pin_read</span>(board_url, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"dat"</span>)</span></code></pre></div>
-<p>Use this custom function in Python to have the data in a Pandas DataFrame.</p>
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> pandas <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">as</span> pd</span>
-<span id="cb3-2"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> requests</span>
-<span id="cb3-3"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">from</span> io <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> BytesIO</span>
-<span id="cb3-4"></span>
-<span id="cb3-5"><span class="kw" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">def</span> read_url_pin(name):</span>
-<span id="cb3-6">  url <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"https://posit.byui.edu/data/"</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> name <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"/"</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> name <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">+</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">".parquet"</span></span>
-<span id="cb3-7">  response <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> requests.get(url)</span>
-<span id="cb3-8">  <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">if</span> response.status_code <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">==</span> <span class="dv" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">200</span>:</span>
-<span id="cb3-9">    parquet_content <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> BytesIO(response.content)</span>
-<span id="cb3-10">    pandas_dataframe <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> pd.read_parquet(parquet_content)</span>
-<span id="cb3-11">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> pandas_dataframe</span>
-<span id="cb3-12">  <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">else</span>:</span>
-<span id="cb3-13">    <span class="bu" style="color: null;
-background-color: null;
-font-style: inherit;">print</span>(<span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">f"Failed to retrieve data. Status code: </span><span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">{</span>response<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">.</span>status_code<span class="sc" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">}</span><span class="ss" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"</span>)</span>
-<span id="cb3-14">    <span class="cf" style="color: #003B4F;
-background-color: null;
-font-weight: bold;
-font-style: inherit;">return</span> <span class="va" style="color: #111111;
-background-color: null;
-font-style: inherit;">None</span></span>
-<span id="cb3-15"></span>
-<span id="cb3-16"><span class="co" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;"># Example usage:</span></span>
-<span id="cb3-17">pandas_df <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> read_url_pin(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"nasdaq_price_and_volume"</span>)</span></code></pre></div>
-</section>
-</section>
-<section id="authenticated-connection" class="level4">
-<h4 class="anchored" data-anchor-id="authenticated-connection"><strong>Authenticated Connection:</strong></h4>
-<p>Our connect server is <a href="https://posit.byui.edu/connect/#/content/listing?filter=min_role:viewer&amp;filter=content_type:all&amp;view_type=compact">https://posit.byui.edu</a> which you assign to your <code>CONNECT_SERVER</code> environment variable. You must <a href="https://docs.posit.co/connect/user/api-keys/#api-keys-creating">create an API key</a> and store it in your environment under <code>CONNECT_API_KEY</code>.</p>
-<p><em>Read more about <a href="../../environment.html">environment variables and the pins package</a> to understand how these environment variables are stored and accessed in R and Python with pins.</em></p>
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">library</span>(pins)</span>
-<span id="cb4-2">board <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">board_connect</span>(<span class="at" style="color: #657422;
-background-color: null;
-font-style: inherit;">auth =</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"auto"</span>)</span>
-<span id="cb4-3">dat <span class="ot" style="color: #003B4F;
-background-color: null;
-font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">pin_read</span>(board, <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"hathawayj/nasdaq_price_and_volume"</span>)</span></code></pre></div>
-<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> os</span>
-<span id="cb5-2"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">from</span> pins <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> board_rsconnect</span>
-<span id="cb5-3"><span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">from</span> dotenv <span class="im" style="color: #00769E;
-background-color: null;
-font-style: inherit;">import</span> load_dotenv</span>
-<span id="cb5-4">load_dotenv()</span>
-<span id="cb5-5">API_KEY <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> os.getenv(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'CONNECT_API_KEY'</span>)</span>
-<span id="cb5-6">SERVER <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> os.getenv(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">'CONNECT_SERVER'</span>)</span>
-<span id="cb5-7"></span>
-<span id="cb5-8">board <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> board_rsconnect(server_url<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>SERVER, api_key<span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span>API_KEY)</span>
-<span id="cb5-9">dat <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> board.pin_read(<span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"hathawayj/nasdaq_price_and_volume"</span>)</span></code></pre></div>
-
-
-</section>
-</section>
-</section>
-
-
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p><a href=""></a>↩︎</p></li>
-</ol>
-</section></div> ]]></description>
-  <category>finance</category>
-  <guid>https://byuidatascience.github.io/posts/intro_stats/nasdaq_price_and_volume.html</guid>
-  <pubDate>Wed, 01 May 2024 06:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
