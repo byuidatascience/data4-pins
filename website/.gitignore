@@ -1,2 +1,4 @@
 /.quarto/
 data_scripts/
+
+**/*.quarto_ipynb

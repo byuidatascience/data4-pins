@@ -36,6 +36,12 @@ pin_name = "names_year"
 board = board_connect(server_url=SERVER, api_key=API_KEY)
 board.pin_write(out_dat.to_pandas(), "hathawayj/" + pin_name, type="parquet")
 
+# %% csv
+pin_name = "names_year_csv"
+board = board_connect(server_url=SERVER, api_key=API_KEY)
+board.pin_write(out_dat.to_pandas(), "hathawayj/" + pin_name, type="csv")
+
+
 # %%
 meta = board.pin_meta("hathawayj/" + pin_name)
 # https://docs.posit.co/connect/user/python-pins/
@@ -49,3 +55,7 @@ meta.local.get("content_id")
 # Soon there will be code.
 # https://github.com/posit-dev/posit-sdk-py/issues/175
 # https://posit-dev.github.io/posit-sdk-py/quickstart.html
+
+# %%
+pl.read_csv("https://posit.byui.edu/content/0d43d66f-d3b7-4c43-8c36-52e3ed69e7f1/names_year_csv.csv")
+# %%

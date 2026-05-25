@@ -4,6 +4,7 @@ listing:
   contents: 
     - posts/childhealth/*.qmd
     - posts/marathons/*.qmd
+    - posts/buildings/*.qmd
   sort: "date desc"
   type: table
   categories: false
@@ -15,4 +16,4 @@ title-block-banner: true
 ---
 
 
-The data used in DS 150.
+The data used in DS 350.
